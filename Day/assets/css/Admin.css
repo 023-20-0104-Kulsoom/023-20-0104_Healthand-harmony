@@ -1,0 +1,21 @@
+/* Custom CSS for Admin Page */
+body {
+    background-color: #333; /* Blackish-gray background color */
+    font-family: Arial, sans-serif;
+    color: #fff; /* Text color for better visibility on dark background */
+}
+
+.nav-tabs {
+    background-color: #007bff; /* Blue background color for navigation links */
+}
+
+.nav-tabs .nav-item .nav-link {
+    color: #fff; /* Text color for navigation links */
+}
+
+.tab-content {
+    background-color: #fff; /* White background color for content */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}

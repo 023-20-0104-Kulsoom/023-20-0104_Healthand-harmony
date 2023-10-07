@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page - Health & Harmony Inc</title>
+    <!-- Include Bootstrap CSS (you should download and reference Bootstrap files) -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Include your custom CSS file -->
+    <link rel="stylesheet" type="text/css" href="Admin.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Admin Page</h1>
+        <!-- Navigation Links for Article Management -->
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="#create-article">Create Article</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#read-articles">Read Articles</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#update-article">Update Article</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#delete-article">Delete Article</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#publish-article">Publish Article</a>
+            </li>
+        </ul>
+
+        <!-- Article Management Content -->
+        <div id="create-article" class="tab-content mt-3">
+            <!-- Create Article Form -->
+            <form>
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" class="form-control" id="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="content">Content</label>
+                    <textarea class="form-control" id="content" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Create Article</button>
+            </form>
+        </div>
+
+        <div id="read-articles" class="tab-content mt-3">
+            <!-- Read Articles List -->
+            <h2>Articles List</h2>
+            <!-- Display a list of articles here -->
+        </div>
+
+        <div id="update-article" class="tab-content mt-3">
+            <!-- Update Article Form -->
+            <form>
+                <div class="form-group">
+                    <label for="update-title">Title</label>
+                    <input type="text" class="form-control" id="update-title" required>
+                </div>
+                <div class="form-group">
+                    <label for="update-content">Content</label>
+                    <textarea class="form-control" id="update-content" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Update Article</button>
+            </form>
+        </div>
+
+        <div id="delete-article" class="tab-content mt-3">
+            <!-- Delete Article Form -->
+            <form>
+                <div class="form-group">
+                    <label for="delete-article-id">Article ID</label>
+                    <input type="text" class="form-control" id="delete-article-id" required>
+                </div>
+                <button type="submit" class="btn btn-danger">Delete Article</button>
+            </form>
+        </div>
+
+        <div id="publish-article" class="tab-content mt-3">
+            <!-- Publish Article Form -->
+            <form>
+                <div class="form-group">
+                    <label for="publish-article-id">Article ID</label>
+                    <input type="text" class="form-control" id="publish-article-id" required>
+                </div>
+                <button type="submit" class="btn btn-success">Publish Article</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS (you should download and reference Bootstrap files) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
